@@ -1,9 +1,16 @@
-const http = require('http');
-const app = require("./index.js");
+const express = require('express')
+const bodyParser = require('body-parser')
 
-const port = port.env.PORT || 3000;
-const server = http.createServer(app);
+const app = express()
+const port = 5000
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+/* Static Files
+app.use(express.static('public'))
+app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/img', express.static(__dirname + 'public/img'))
+app.use('/js', express.static(__dirname + 'public/js'))
+*/
+
+
+// Listen on port 5000
+app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))
