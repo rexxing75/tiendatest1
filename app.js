@@ -10,6 +10,7 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
 */
 
+app.use(express.static("index.html"))
 
 // Listen on port 5000
 app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))
