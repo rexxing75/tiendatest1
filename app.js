@@ -15,4 +15,4 @@ app.use('/html', express.static(__dirname + 'public/html'))
 // Listen on port 5000
 app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))
 
-alert("hola")
+window.alert("l")
