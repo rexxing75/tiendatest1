@@ -9,6 +9,9 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
 */
+//TEMPLATE ENGINE
+app.set('views', './public/html')
+app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 // Listen on port 5000
