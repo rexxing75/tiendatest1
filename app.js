@@ -16,8 +16,6 @@ app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 
-const newsRouter = require('./public/html/index')
-app.use('/', newsRouter)
 
 
 // Listen on port 5000
