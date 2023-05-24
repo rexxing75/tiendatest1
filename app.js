@@ -14,10 +14,6 @@ app.use(express.static('public'))
 app.set('views', './public/html')
 app.set('view engine', 'ejs')
 
-const newsRouter = require('./public/html/html')
-
-app.use('/', newsRouter)
-
 app.use(express.static('public'))
 
 
